@@ -1,0 +1,300 @@
+@font-face {
+  font-family: lcdsolid;
+  src: url(LcdSolid-VPzB.ttf);
+}
+body{
+  background:url('images/bg1.webp'); repeat-y 100% 100% fixed;
+  background-color: #C3B1E1;
+  height:100%;
+  width:100%;
+  color: white;
+  position: fixed;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation: fadeIn 1.5s;
+}
+.dark-mode {
+  background-color:  #C3B1E1;
+  background:url('images/https://random.imagecdn.app/1920/1080'); repeat-y 100% 100% fixed;
+  animation: fadeIn 1s;
+}
+
+.content {
+  max-width: 600px;
+  margin: auto;
+  background-color: #781D42;
+  color: white;
+  padding: 10px;
+  border-radius: 15px;
+  font-family: lcdsolid;
+  animation: fadeIn 1.5s;
+  font-display: optional;
+  text-align: center;
+}
+.title{
+  text-align: center;
+  color: white;
+  font-family: lcdsolid;
+  font-display: optional;
+}
+b{
+  font-size: 2em;
+  color: white;
+}
+.counter-span {
+  display: inline-block;
+  padding: 10px 10px 6px;
+  border-radius: 15px;
+  background: #A3423C;
+  color: #ffffff;
+  margin: 5px 5px;
+  font-size: 20px;
+  font-display: optional;
+  font-family: lcdsolid;
+  border-style: solid;
+}
+.counter{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.dropbtn {
+  background-color: #A3423C;
+  color: #ffffff;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 15px;
+  border-style: solid;
+  font-family: lcdsolid;
+  font-display: optional;
+}
+
+.dropdown {
+  position: relative;
+  display: block;
+  justify-content: center;
+  border-color: #446A46;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 15px;
+  border-color: #446A46;
+  text-align: center;
+  right: 36.5%;
+}
+  
+.dropdown-content a {
+  font-family: lcdsolid;
+  color: black;
+  padding: 12px 16px;
+  font-display: optional;
+  text-decoration: none;
+  display: block;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.dropdown-content b {
+  font-family: lcdsolid;
+  font-display: optional;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-radius: 15px;
+  text-align: center;
+}
+.password{
+  font-family: lcdsolid;
+  font-display: optional;
+  color: #ffffff;
+  padding-top: 10px;
+}
+.countertitle{
+  font-family: lcdsolid;
+  font-display: optional;
+  color: #ffffff;
+  font-size: 30px;
+  text-decoration: underline;
+  text-align: center;
+}
+.countertitle-info{
+  font-family: lcdsolid;
+  font-display: optional;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.buttonpass{
+  position: fixed;
+  right: 0px; bottom: 0px;
+  background-color: #446A46;
+  font-family: lcdsolid;
+  font-display: optional;
+  border: solid;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  cursor: pointer;
+  border-color: #446A46;
+}
+.dropdown-content a:hover {background-color: #446A46;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #446A46;}
+body,
+.website-counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+/* Styles for website counter container */
+.website-counter {
+  background-color: #446A46;
+  height: 20px;
+  width: 80px;
+  color: white;
+  border-style: solid;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 25px;
+  margin-top: 10px;
+  font-family: lcdsolid;
+  font-display: optional;
+  position: fixed;
+  left: 0px; bottom: 0px;
+  border-color: #446A46;
+}
+.counter-title{
+  position: fixed;
+  left: 0px; bottom: 25px;
+  font-family: lcdsolid;
+  font-display: optional;
+  border-color: #446A46;
+}
+.togglebg{
+  position: fixed;
+  bottom: 0px;
+  background-color: #446A46;
+  font-family: lcdsolid;
+  font-display: optional;
+  border: solid;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  cursor: pointer;
+  border-color: #446A46;
+}
+.info{
+  position: fixed;
+  right: 0px; top: 0px;
+  background-color: #446A46;
+  font-family: lcdsolid;
+  font-display: optional;
+  border: solid;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  cursor: pointer;
+  border-color: #446A46;
+}
+
+
+
+.popupbtn{
+  position: fixed;
+  left: 0px; top: 0px;
+  background-color: #446A46;
+  font-family: lcdsolid;
+  font-display: optional;
+  border: solid;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  cursor: pointer;
+  border-color: #446A46;
+}
+
+
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  margin: 0;
+  border-radius: 16px;
+  position: absolute;
+  top: 60%;
+  transform: translateY(-102%);
+  z-index: 1;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+.popup .hide {
+  visibility: hidden;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+.button-colour{
+  order-color: #852999;
+  background-color: #852999;
+}
+/* customizable snowflake styling */
+.snowflake {
+  color: #fff;
+  font-size: 1em;
+  font-family: Arial, sans-serif;
+  font-display: optional;
+  text-shadow: 0 0 5px #000;
+}
+
+@-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes snowflakes-shake{0%,100%{-webkit-transform:translateX(0);transform:translateX(0)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}}@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@keyframes snowflakes-shake{0%,100%{transform:translateX(0)}50%{transform:translateX(80px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}.snowflake:nth-of-type(10){left:25%;-webkit-animation-delay:2s,0s;animation-delay:2s,0s}.snowflake:nth-of-type(11){left:65%;-webkit-animation-delay:4s,2.5s;animation-delay:4s,2.5s}
+
+.games{
+  position: fixed;
+  top: 0px;
+  background-color: #446A46;
+  font-family: lcdsolid;
+  font-display: optional;
+  border: solid;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  cursor: pointer;
+  border-color: #446A46;
+}
