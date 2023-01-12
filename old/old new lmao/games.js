@@ -95,3 +95,22 @@ if (localStorage.getItem("hasVisited") == null) {
   getCount()
     .catch((err) => console.log(err));
 }
+
+function password(){
+const username=prompt("Please input your username:");
+            if(username=="BETA"){
+                        const password=prompt("Please input your password:");
+                        if(password=="ily"){
+                                    alert("Access Granted");
+                                    window.location="/beta.html";
+                        }
+                        else{
+                                    alert("The password you inputed was incorrect");
+                                    window.location="/index.html";
+                        }
+            }
+            else{
+                        alert("Access Denied!!");
+                        window.location="/index.html";
+            }
+}

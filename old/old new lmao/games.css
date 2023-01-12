@@ -1,0 +1,104 @@
+@font-face {
+  font-family: lcdsolid;
+  src: url(LcdSolid-VPzB.ttf);
+}
+:root {
+  --main-color: white;
+  --main-font-family: lcdsolid;
+}
+body{
+  background-color: black;
+}
+h1{
+  color: var(--main-color);
+  font-family: var(--main-font-family);
+  text-align: center;
+}
+img{
+  display: block;
+  margin-left: auto;
+  background-color: black;
+  margin-right: auto;
+  border-style: solid;
+  border-radius: 16px;
+  cursor: pointer;
+}
+img:hover{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-radius: 16px;
+  cursor: pointer;
+  opacity: 60%;
+}
+.Home{
+  position: fixed;
+  left: 0px; top: 0px;
+  background-color: black;
+  background-color: black;
+  font-family: lcdsolid;
+  font-display: optional;
+  border: solid;
+  border-radius: 6px;
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--main-color);
+  cursor: pointer;
+  border-color: black;
+}
+.beta{
+  position: fixed;
+  right: 0px; bottom: 0px;
+  background-color: black;
+  background-color: black;
+  font-family: lcdsolid;
+  font-display: optional;
+  border: solid;
+  border-radius: 6px;
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--main-color);
+  cursor: pointer;
+  border-color: black;
+}
+.random{
+  position: fixed;
+  right: 0px; top: 0px;
+  background-color: black;
+  font-family: lcdsolid;
+  font-display: optional;
+  border: solid;
+  border-radius: 6px;
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--main-color);
+  cursor: pointer;
+  border-color: black;
+}
+.counter-span {
+  display: inline-block;
+  padding: 10px 10px 6px;
+  border-radius: 15px;
+  background: black;
+  color: white;
+  margin: 5px 5px;
+  font-size: 20px;
+  font-display: optional;
+  font-family: lcdsolid;
+  border-style: solid;
+}
+.counter{
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  color: white;
+  font-family: lcdsolid;
+}
+.countertitle{
+  position: fixed;
+  left: 6px;
+  bottom: 35px;
+  color: white;
+  font-family: lcdsolid;
+}

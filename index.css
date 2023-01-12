@@ -201,7 +201,10 @@ a {
 }
 
 
-
+.games{
+  visibility: visible;
+  
+}
 
 
 
@@ -430,6 +433,7 @@ p1{
   color: white;
   font-size: 2rem;
   font-family: "Rubik", sans-serif;
+  text-align: center;
 }
 img{
   display: block;
@@ -448,4 +452,15 @@ img:hover{
   border-radius: 16px;
   cursor: pointer;
   opacity: 60%;
+}
+.oldlogo{
+  visibility: visible;
+}
+.random{
+  position: fixed;
+  right: 0;
+  top: 0;
+  font-family: "Rubik", sans-serif;
+  font-size: 2rem;
+  color: white;
 }
