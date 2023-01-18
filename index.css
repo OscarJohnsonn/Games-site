@@ -435,27 +435,23 @@ p1{
   font-family: "Rubik", sans-serif;
   text-align: center;
 }
-img{
-  display: block;
-  margin-left: auto;
-  background-color: black;
-  margin-right: auto;
-  border-style: solid;
-  border-radius: 16px;
+.games{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
 }
 img:hover{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-style: solid;
+  opacity: .5;
+
+}
+.game-image{
+  padding:0 20px 20px;
   border-radius: 16px;
-  cursor: pointer;
-  opacity: 60%;
 }
-.oldlogo{
-  visibility: visible;
-}
+
 .random{
   position: fixed;
   right: 0;
