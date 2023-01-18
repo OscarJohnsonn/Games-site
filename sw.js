@@ -1,5 +1,5 @@
-const dataCacheName = 'DNAP-BETA-TEST';
-const cacheName = 'DNAP-BETA';
+const dataCacheName = 'DNAP';
+const cacheName = 'DNAP';
 const filesToCache = [
   '/',
   '/index.html',
