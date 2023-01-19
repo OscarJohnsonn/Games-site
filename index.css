@@ -27,7 +27,7 @@ body {
   height: 100vh;
   background-color: black;
   margin: 0rem;
-  overflow: scroll;
+  overflow-y: scroll;
   display: grid;
   place-items: center;
 }
@@ -443,9 +443,11 @@ p1{
   justify-content: center;
   cursor: pointer;
 }
+img{
+    border-radius: 16px;
+}
 img:hover{
   opacity: .5;
-
 }
 .game-image{
   padding:0 20px 20px;
