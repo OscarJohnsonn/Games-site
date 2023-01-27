@@ -37,7 +37,7 @@ body {
   overflow-y: scroll;
   display: grid;
   place-items: center;
-  animation: fadeInAnimation ease 3s
+  animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
