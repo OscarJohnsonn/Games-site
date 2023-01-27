@@ -1,10 +1,6 @@
-@font-face {
-  font-family: lcdsolid;
-  src: url(LcdSolid-VPzB.ttf);
-}
 body{
-  background:url('images/bg1.webp'); repeat-y 100% 100% fixed;
-  background-color: #C3B1E1;
+  background:url('images/'); repeat-y 100% 100% fixed;
+  background-color: black;
   height:100%;
   width:100%;
   color: white;
@@ -21,25 +17,26 @@ body{
 
 .content {
   max-width: 600px;
+  min-width: 400px;
   margin: auto;
-  background-color: #781D42;
-  color: white;
+  background-color: white;
+  color: black;
   padding: 10px;
   border-radius: 15px;
-  font-family: lcdsolid;
+  font-family: Rubik;
   animation: fadeIn 1.5s;
   font-display: optional;
   text-align: center;
 }
 .title{
   text-align: center;
-  color: white;
-  font-family: lcdsolid;
+  color: black;
+  font-family: Rubik;
   font-display: optional;
 }
 b{
   font-size: 2em;
-  color: white;
+  color: black;
 }
 .counter-span {
   display: inline-block;
@@ -59,14 +56,13 @@ b{
     flex-wrap: wrap;
 }
 .dropbtn {
-  background-color: #A3423C;
+  background-color: #000000;
   color: #ffffff;
   padding: 16px;
   font-size: 16px;
   border: none;
   border-radius: 15px;
-  border-style: solid;
-  font-family: lcdsolid;
+  font-family: Rubik;
   font-display: optional;
 }
 
@@ -74,7 +70,7 @@ b{
   position: relative;
   display: block;
   justify-content: center;
-  border-color: #446A46;
+  border-color: #ffffff;
 }
 
 .dropdown-content {
@@ -85,13 +81,13 @@ b{
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   border-radius: 15px;
-  border-color: #446A46;
+  border-color: #ffffff;
   text-align: center;
-  right: 36.5%;
+  right: 30%;
 }
   
 .dropdown-content a {
-  font-family: lcdsolid;
+  font-family: Rubik;
   color: black;
   padding: 12px 16px;
   font-display: optional;
@@ -102,7 +98,7 @@ b{
 }
 
 .dropdown-content b {
-  font-family: lcdsolid;
+  font-family: Rubik;
   font-display: optional;
   color: white;
   padding: 12px 16px;
@@ -112,7 +108,7 @@ b{
   text-align: center;
 }
 .password{
-  font-family: lcdsolid;
+  font-family: Rubik;
   font-display: optional;
   color: #ffffff;
   padding-top: 10px;
@@ -148,11 +144,11 @@ b{
   cursor: pointer;
   border-color: #446A46;
 }
-.dropdown-content a:hover {background-color: #446A46;}
+.dropdown-content a:hover {background-color: #000000;}
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {background-color: #446A46;}
+.dropdown:hover .dropbtn {background-color: #000000;}
 body,
 .website-counter {
   display: flex;
@@ -219,7 +215,7 @@ body,
 
 .popupbtn{
   position: fixed;
-  left: 0px; top: 0px;
+  bottom: 0;
   background-color: #446A46;
   font-family: lcdsolid;
   font-display: optional;
@@ -287,14 +283,14 @@ body,
 .games{
   position: fixed;
   top: 0px;
-  background-color: #446A46;
-  font-family: lcdsolid;
+  background-color: #ffffff;
+  font-family: Rubik;
   font-display: optional;
   border: solid;
   border-radius: 6px;
   font-size: 20px;
   font-weight: 700;
-  color: #ffffff;
+  color: #000000;
   cursor: pointer;
-  border-color: #446A46;
+  border-color: #ffffff;
 }

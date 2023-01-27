@@ -2,7 +2,14 @@
   --green: rgb(42, 252, 152);
   --blue: rgb(41, 121, 255);
 }
-
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
 @keyframes float {
   from, to {
     transform: translateY(-0%);
@@ -30,6 +37,9 @@ body {
   overflow-y: scroll;
   display: grid;
   place-items: center;
+  animation: fadeInAnimation ease 3s
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 .line {
@@ -158,6 +168,7 @@ a {
     0 0 / var(--bg-size) 100%;
   color: transparent;
   background-clip: text;
+  
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -442,9 +453,6 @@ p1{
   align-items: center;
   justify-content: center;
   cursor: pointer;
-}
-img{
-    border-radius: 16px;
 }
 img:hover{
   opacity: .5;

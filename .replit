@@ -5,6 +5,8 @@ hidden=[".config"]
 # route = "/"
 # directory= "/"
 
+
+
 [nix]
 channel = "stable-21_11"
 
