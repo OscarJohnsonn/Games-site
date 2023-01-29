@@ -41,7 +41,6 @@ body {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
-
 .line {
   position: fixed;
   top: 0; left: 5px;
@@ -454,13 +453,15 @@ p1{
   justify-content: center;
   cursor: pointer;
 }
+img{
+  border-radius: 16px;
+  border: solid;
+  
+}
 img:hover{
   opacity: .5;
 }
-.game-image{
-  padding:0 20px 20px;
-  border-radius: 16px;
-}
+
 
 .random{
   position: fixed;
