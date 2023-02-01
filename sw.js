@@ -3,10 +3,11 @@ const cacheName = 'DNAP';
 const filesToCache = [
   '/',
   '/index.html',
+  '/index.js',
+  '/index.css',
   '/images/icon.png',
   '/beta.html',
-  '/beta2.css',
-  '/beta2.js',
+  '/gameicons',
 ];
 
 //install the sw
