@@ -149,65 +149,20 @@ a {
   box-sizing: border-box;
 }
 
-
-
-.boujee-text {
+h1 {
   text-align: center;
-  --bg-size: 400%;
-  --color-one: hsl(205, 100%, 50%);
-  --color-two: hsl(205, 100%, 92%);
-  font-family: "Rubik", sans-serif;
-  font-size: clamp(3rem, 25vmin, 8rem);
-  background: linear-gradient(
-      90deg,
-      var(--color-one),
-      var(--color-two),
-      var(--color-one)
-    )
-    0 0 / var(--bg-size) 100%;
-  color: transparent;
-  background-clip: text;
-  
+  color: hsl(205, 100%, 50%);
+  font-size: 5rem;
+  font-family: Rubik;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .boujee-text {
-    animation: move-bg 8s linear infinite;
-  }
-  @keyframes move-bg {
-    to {
-      background-position: var(--bg-size) 0;
-    }
-  }
-}
+
 
 .gametitle {
   text-align: center;
-  --bg-size: 400%;
-  --color-one: hsl(205, 100%, 50%);
-  --color-two: hsl(205, 100%, 92%);
-  font-family: "Rubik", sans-serif;
+  color: hsl(205, 100%, 50%);
   font-size: 3rem;
-  background: linear-gradient(
-      90deg,
-      var(--color-one),
-      var(--color-two),
-      var(--color-one)
-    )
-    0 0 / var(--bg-size) 100%;
-  color: transparent;
-  background-clip: text;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .gametitle {
-    animation: move-bg 8s linear infinite;
-  }
-  @keyframes move-bg {
-    to {
-      background-position: var(--bg-size) 0;
-    }
-  }
+  font-family: Rubik;
 }
 
 
