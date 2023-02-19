@@ -430,6 +430,12 @@ img:hover{
   opacity: .5;
 }
 
+.spinny {
+  transition: transform .7s ease-in-out;
+}
+.spinny:hover {
+  transform: rotate(360deg);
+}
 
 .random{
   position: fixed;
