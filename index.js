@@ -89,3 +89,15 @@ randomlinks[47]="https://trinculo54.github.io/Boxel-rebound-hope/Older/";
 function randomlink(){
   window.open(randomlinks[Math.floor(Math.random()*randomlinks.length)]);
 }
+
+var countOptions = {
+  useEasing: true,
+  separator: ''
+}
+
+var count = new CountUp('MyNumber', 0, 75, 0, 5, countOptions)
+
+// start the counting and give it a callback when done
+count.start(function() {
+  $('h2').text('Games!')
+})

@@ -155,6 +155,12 @@ h1 {
   font-size: 5rem;
   font-family: Rubik;
 }
+h2 {
+  text-align: center;
+  color: hsl(205, 100%, 50%);
+  font-size: 5rem;
+  font-family: Rubik;
+}
 
 
 
