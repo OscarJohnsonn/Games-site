@@ -423,11 +423,11 @@ p1{
 
 img{
   border-radius: 16px;
-  
+  transition: transform 0.6s ease-in-out;
   
 }
 img:hover{
-  opacity: .5;
+  transform: rotate(360deg);
 }
 
 
