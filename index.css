@@ -2,6 +2,13 @@
   --green: rgb(42, 252, 152);
   --blue: rgb(41, 121, 255);
 }
+
+
+
+.title{
+
+}
+
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
@@ -169,6 +176,8 @@ h2 {
   color: hsl(205, 100%, 50%);
   font-size: 3rem;
   font-family: Rubik;
+  animation: bounceInUp; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s;
 }
 
 
