@@ -6,8 +6,7 @@ const filesToCache = [
   '/index.js',
   '/index.css',
   '/images/icon.png',
-  '/beta.html',
-  '/gameicons',
+  '/images',
 ];
 
 //install the sw

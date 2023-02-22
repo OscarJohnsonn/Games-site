@@ -1,3 +1,7 @@
+@font-face {
+  font-family: Rubik;
+  src: url(Nunito-SemiBold.ttf);
+}
 body{
   background:url('images/'); repeat-y 100% 100% fixed;
   background-color: black;
