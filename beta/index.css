@@ -12,7 +12,7 @@ body{
 .Title::after{
     animation: slideInUp;
     animation-duration: 1s;
-    content: 'DNAP';
+    content: 'DNAp';
     
 }
 .Title:hover::after{
