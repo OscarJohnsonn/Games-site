@@ -1,0 +1,41 @@
+@font-face {
+    font-family: Nunito;
+    src: url(Nunito-SemiBold.ttf);
+}
+body{
+    font-family: Nunito;
+    text-align: center;
+    font-size: 5rem;
+}
+.Title::after{
+    animation: slideInUp;
+    animation-duration: 1s;
+    content: 'DNAP';
+    
+}
+.Title:hover::after{
+    content: 'definitely not a proxy ';
+    
+}
+
+
+/* HORIZONTAL SCROLL */
+.scroll-container{
+    overflow: auto;
+    white-space: nowrap;
+    padding: 5px 70px 5px 20px;
+    background: transparent;
+    height: 100%;
+    border-radius:15px;
+}
+  
+.gridscroll{
+    display:inline-block;
+}
+  
+.gridscroll img {
+    margin-right:22px;
+}
+img{
+    border-radius: 16px;
+}
