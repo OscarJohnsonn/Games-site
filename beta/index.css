@@ -8,10 +8,11 @@ body{
     font-size: 5rem;
     background-color: #0D1624;
     color: aliceblue;
-}
-.Title::after{
     animation: slideInUp;
     animation-duration: 1s;
+}
+.Title::after{
+
     content: 'DNAP';
     
 }
@@ -46,4 +47,7 @@ img{
     border-radius: 16px;
     cursor: pointer;
 }
-
+.fire{
+    width: 2rem;
+    fill: aliceblue;
+}
