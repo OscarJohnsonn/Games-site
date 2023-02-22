@@ -6,6 +6,8 @@ body{
     font-family: Nunito;
     text-align: center;
     font-size: 5rem;
+    background-color: #0D1624;
+    color: aliceblue;
 }
 .Title::after{
     animation: slideInUp;
@@ -16,6 +18,10 @@ body{
 .Title:hover::after{
     content: 'definitely not a proxy ';
     
+}
+.Popular{
+    font-size: 2rem;
+    text-align: left;
 }
 
 
@@ -38,4 +44,6 @@ body{
 }
 img{
     border-radius: 16px;
+    cursor: pointer;
 }
+
