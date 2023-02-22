@@ -44,9 +44,7 @@ body {
   overflow-y: scroll;
   display: grid;
   place-items: center;
-  animation: fadeInAnimation ease 5s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+
 }
 .line {
   position: fixed;
@@ -422,7 +420,8 @@ p1{
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  animation: fadeIn 10s;
+  animation: zoomIn; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 0.5s;
 }
 
 @keyframes fadeIn {
