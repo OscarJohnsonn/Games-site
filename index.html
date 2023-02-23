@@ -11,14 +11,14 @@
         gtag('config', 'G-RJPRQRMQM0');
     </script>
     <link rel="manifest" href="/manifest.json">
-    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <link rel="icon" type="image/x-icon" href="/images/logo.webp">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DNAP</title>
     <meta name="description" content="Free online games for school and work!">
     <meta name="keywords" content="online, games, gamers, school, work, googleclassroom, googledrive">
-    <script src="index.js"></script>
+    <script src="index.js"></script> 
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -29,6 +29,8 @@
     <meta name="msapplication-TileColor" content="#000">
     
 <body>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img width="50px"src="images/up.webp"></button>
     <span class="Title"></span>
     <h2 class="old"><a href="/old2/index.html">OLD DNAP</a></h2>
     <div class="content">
@@ -37,7 +39,7 @@
         <div class="gridscroll">
             
             <img width="200px" onclick="document.location='https://games.dnap.ml/jetpack-joyride/index.html'" src="images/jetpackjoyride.webp" alt="jetpack-joyride"/>
-            <img width="200px" onclick="document.location='https://links.dnap.ml'" src="images/subwaysurfers.webp" alt="subwaysurfers"/>
+            <img width="200px" onclick="document.location='https://games2.dnap.ml/subway-surfers-ny/index.html'" src="images/subwaysurfers.webp" alt="subwaysurfers"/>
             <img width="200px" onclick="document.location='https://links.dnap.ml/eggycar.html'" src="images/eggycar.webp" alt="eggycar"/>
             <img width="200px" onclick="document.location='https://bitlife.o5ange.repl.co'" src="images/bitlife.webp" alt="bitlife"/>
             <img width="200px" onclick="document.location='https://games2.dnap.ml/core-ball/index.html'" src="images/coreball-1.webp" alt="core-ball"/>
@@ -53,7 +55,7 @@
         <h2 class="Popular">Other games <img class="fire" src="images/games.svg" alt="games"></h2>
                 <div class="scroll-container">
         <div class="gridscroll">
-            
+            <img width="200px" onclick="document.location='https://links.dnap.ml/youtube.html'" src="images/youtube.webp" alt="youtube unblocked"/>
             <img width="200px" onclick="document.location='https://dnap.ml/proxy.html'" src="images/proxy.webp" alt="Proxy"/>
             <img width="200px" onclick="document.location='https://games2.dnap.ml/stickman-golf/index.html'" src="images/stickmangolf-1.webp" alt="stickman-golf"/>
             <img width="200px" onclick="document.location='https://links.dnap.ml/Capitalist.html'" src="images/adventurecapitalist.webp" alt="adventurecapitalist"/>
@@ -116,7 +118,7 @@
             <img width="200px" onclick="document.location='https://games.dnap.ml/bloonstd2/index.html'" src="images/bloonstd2.webp" alt="bloonstd2"/>
             <img width="200px" onclick="document.location='https://links.dnap.ml/cstimer.html'" src="images/cstimer.webp" alt="cstimer"/>
             <img width="200px" onclick="document.location='https://links.dnap.ml/flexboxfroggy.html'" src="images/flexboxfroggy.webp" alt="flexboxfroggy"/>
-            <img width="200px" onclick="document.location='https://dnap.ml/spinny.html'" src="images/spinnydnap.webp" alt="spinnydnap"/>
+            <img width="200px" onclick="document.location='https://dnap.ml/old2/spinny.html'" src="images/spinnydnap.webp" alt="spinnydnap"/>
 
         </div>
         </div>
@@ -133,7 +135,7 @@
                 <img width="200px" onclick="document.location='https://links.dnap.ml/hexgl.html'" src="images/hexgl.webp" alt="hexgl"/>
                 <img width="200px" onclick="document.location='https://links.dnap.ml/tanuki.html'" src="images/tanuki.webp" alt="tanuki"/>
                 <img width="200px" onclick="document.location='https://links.dnap.ml/geogee.html'" src="images/geogee.webp" alt="geogee"/>
-                <img width="200px" onclick="document.location='https://links.dnap.ml/bongocat.html'" src="images/spinnydnap.webp" alt="spinnydnap"/>
+                <img width="200px" onclick="document.location='https://links.dnap.ml/bongocat.html'" src="images/bongocat.webp" alt="bongocat"/>
     
             </div>
             </div>
@@ -145,13 +147,33 @@
                 <img width="200px" onclick="document.location='https://links.dnap.ml/littlealchemy.html'" src="images/littlealchemy.webp" alt="littlealchemy"/>
                 <img width="200px" onclick="document.location='https://links.dnap.ml/tictactoe.html'" src="images/tictactoe.webp" alt="tictactoe"/>
                 <img width="200px" onclick="document.location='https://links.dnap.ml/proxx.html'" src="images/proxx.webp" alt="proxx"/>
-                <img width="200px" onclick="document.location='https://links.dnap.ml/caygames.html'" src="images/" alt=""/>
+                <img width="200px" onclick="document.location='https://links.dnap.ml/caygames.html'" src="images/caygames.webp" alt="caygames"/>
              
             </div>
             </div>
 
   
     </div>
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
 
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+    </script>
 </body>
 </html>
