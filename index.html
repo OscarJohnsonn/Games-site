@@ -21,6 +21,7 @@
     <script src="index.js"></script> 
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="pwa test">
@@ -29,11 +30,16 @@
     <meta name="msapplication-TileColor" content="#000">
     
 <body>
-
+    <label class="switch">
+        <input type="checkbox" onclick="darkLight()" id="checkBox" >
+        <span class="slider"></span>
+    </label>
+      
     <button onclick="topFunction()" id="myBtn" title="Go to top"><img width="50px"src="images/up.webp"></button>
     <span class="Title"></span>
     <h2 class="old"><a href="/old2/index.html">OLD DNAP</a></h2>
     <div class="content">
+        
         <h2 class="Popular">Trending <img class="fire"src="../images/trending.svg" alt="trending"></h2>
         <div class="scroll-container">
         <div class="gridscroll">
@@ -174,6 +180,27 @@
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
         }
+        $('body').toggleClass(localStorage.toggled);
+
+        function darkLight() {
+        /*DARK CLASS*/
+        if (localStorage.toggled != 'dark') {
+            $('body, p').toggleClass('dark', true);
+            localStorage.toggled = "dark";
+            
+        } else {
+            $('body, p').toggleClass('dark', false);
+            localStorage.toggled = "";
+        }
+        }
+
+        /*Add 'checked' property to input if background == dark*/
+        if ($('body').hasClass('dark')) {
+        $( '#checkBox' ).prop( "checked", true )
+        } else {
+        $( '#checkBox' ).prop( "checked", false )
+        }
+
     </script>
 </body>
 </html>
