@@ -30,14 +30,34 @@
     <meta name="msapplication-TileColor" content="#000">
     
 <body>
+
+        <div id="google_translate_element">
+
+        <script type="text/javascript">
+        function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+        </script>
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    </div>
+
+
     <label class="switch">
         <input type="checkbox" onclick="darkLight()" id="checkBox" >
         <span class="slider"></span>
     </label>
-      
+    <h2 class="setting">Dark Mode/Light Mode</h2>
+    <label class="switch">
+        <input type="checkbox" onclick="olddnap()" id="checkBox" >
+        <span class="slider"></span>
+    </label>
+    <h2 class="olddnap">Old DNAP</h2>
+
+
+
+
     <button onclick="topFunction()" id="myBtn" title="Go to top"><img width="50px"src="images/up.webp"></button>
     <span class="Title"></span>
-    <h2 class="old"><a href="/old2/index.html">OLD DNAP</a></h2>
     <div class="content">
         
         <h2 class="Popular">Trending <img class="fire"src="../images/trending.svg" alt="trending"></h2>
@@ -199,6 +219,10 @@
         $( '#checkBox' ).prop( "checked", true )
         } else {
         $( '#checkBox' ).prop( "checked", false )
+        }
+        
+        function olddnap() {
+            window.location.assign("https://dnap.ml/old2/index.html")
         }
 
     </script>
