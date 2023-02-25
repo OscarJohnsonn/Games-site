@@ -5,7 +5,7 @@ const filesToCache = [
   '/index.html',
   '/index.js',
   '/index.css',
-  '/images/icon.png',
+  '/images/logo.webp',
   '/images',
 ];
 
