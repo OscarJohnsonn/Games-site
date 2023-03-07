@@ -3,12 +3,12 @@
   "name": "DNAP",
   "icons": [
     {
-      "src": "/images/icon.png",
+      "src": "/images/images/logo.webp",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/images/icon.png",
+      "src": "/images/images/logo.webp",
       "type": "image/png",
       "sizes": "512x512"
     }
