@@ -287,8 +287,12 @@
         greeting = 'Good afternoon!';
         icon = "sun-o";
         }
-        else if (hourNow < 24){
+        else if (hourNow < 21){
         greeting = "Good evening"
+        icon = "moon-o";
+        }
+        else if (hourNow < 24){
+        greeting = "Good Night (you should sleep💤)"
         icon = "moon-o";
         }
         else {
