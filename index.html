@@ -21,6 +21,7 @@
     <script src="index.js"></script> 
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="sw.js"></script>
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -60,7 +61,11 @@
 
     <button onclick="topFunction()" id="myBtn" title="Go to top"><img width="50px"src="images/up.webp"></button>
     <span class="Title"></span>
-    <h1 style="colour: white; font-size: 3rem;">TEHEHEHEHE</h1> 
+    <div class="message">
+        <div id="col-1"></div>
+        <div id="col-2"><div id="icon"></div></div>
+    </div>
+
     <div class="content">
         
         <h2 class="Popular">Trending <img class="fire"src="../images/trending.svg" alt="trending"></h2>
@@ -85,18 +90,17 @@
         <h2 class="Popular">New Games <img class="fire" src="images/games.svg" alt="games"></h2>
                 <div class="scroll-container">
         <div class="gridscroll">
-            
-            <img width="15%" onclick="document.location='/embeds/1.html'" src="images/1.webp" alt="1"/>
-            <img width="15%" onclick="document.location='/embeds/wallsmash.html'" src="images/wallsmash.webp" alt="wallsmash"/>
-            <img width="15%" onclick="document.location='/embeds/stickmerge.html'" src="images/stickmerge.webp" alt="stick merge"/>
-            <img width="15%" onclick="document.location='/embeds/ballistickchickens.html'" src="images/ballisticchickens.webp" alt="ballistic-chickens"/>
-            <img width="15%" onclick="document.location='/embeds/blackholesquare'" src="images/blackholesquare.webp" alt="blackholesquare"/>
-            <img width="15%" onclick="document.location='/embeds/DogeMine2.html'" src="images/dogeminer2.webp" alt="dogeminer2"/>
-            <img width="15%" onclick="document.location='/embeds/dragonvsbricks.html'" src="images/dragonvsicebricks.webp" alt="dragon-vs-bricks"/>
-            <img width="15%" onclick="document.location='/embeds/googlefued.html'" src="images/googlefeud.webp" alt="google-feud"/>
-            <img width="15%" onclick="document.location='/embeds/drivemad.html'" src="images/drivemad.webp" alt="drive-mad"/>
-            <img width="15%" onclick="document.location='/embeds/slopeball.html'" src="images/slopeball.webp" alt="slope-ball"/>
-            <img width="15%" onclick="document.location='/embeds/drawthehill.html'" src="images/drawthehill.webp" alt="draw-the-hill"/>
+            <img width="15%" onclick="document.location='/embeds/cellmachine.html'" src="images/cellmachine.webp" alt="cellmachine"/>
+            <img width="15%" onclick="document.location='/embeds/planetlife.html'" src="images/superplanet.gif" alt="planetlife"/>
+            <img width="15%" onclick="document.location='/embeds/push.html'" src="images/push.webp" alt="push-the-square"/>
+            <img width="15%" onclick="document.location='/embeds/cookie.html'" src="images/cookie.webp" alt="cookie clicker"/>
+            <img width="15%" onclick="document.location='/embeds/button.html'" src="images/button.webp" alt="bigredbutton"/>
+            <img width="15%" onclick="document.location='/embeds/osu.html'" src="images/osu.webp" alt="osu"/>
+            <img width="15%" onclick="document.location='/embeds/eelslap.html'" src="images/eelslap.webp" alt="eelslap"/>
+            <img width="15%" onclick="document.location='/embeds/.html'" src="images/.webp" alt=""/>
+            <img width="15%" onclick="document.location='/embeds/.html'" src="images/.webp" alt=""/>
+            <img width="15%" onclick="document.location='/embeds/.html'" src="images/.webp" alt=""/>
+
 
 
         </div>
@@ -117,6 +121,24 @@
             <img width="15%" onclick="document.location='https://links.dnap.tk/candycrush.html'" src="images/candycrush.webp" alt="candycrush"/>
             <img width="15%" onclick="document.location='/embeds/papasburgeria.html'" src="images/papasburgeria-1.webp" alt="papasburgeria"/>
             
+
+        </div>
+        </div>
+        <div class="scroll-container">
+        <div class="gridscroll">
+            
+            <img width="15%" onclick="document.location='/embeds/1.html'" src="images/1.webp" alt="1"/>
+            <img width="15%" onclick="document.location='/embeds/wallsmash.html'" src="images/wallsmash.webp" alt="wallsmash"/>
+            <img width="15%" onclick="document.location='/embeds/stickmerge.html'" src="images/stickmerge.webp" alt="stick merge"/>
+            <img width="15%" onclick="document.location='/embeds/ballistickchickens.html'" src="images/ballisticchickens.webp" alt="ballistic-chickens"/>
+            <img width="15%" onclick="document.location='/embeds/blackholesquare'" src="images/blackholesquare.webp" alt="blackholesquare"/>
+            <img width="15%" onclick="document.location='/embeds/DogeMine2.html'" src="images/dogeminer2.webp" alt="dogeminer2"/>
+            <img width="15%" onclick="document.location='/embeds/dragonvsbricks.html'" src="images/dragonvsicebricks.webp" alt="dragon-vs-bricks"/>
+            <img width="15%" onclick="document.location='/embeds/googlefued.html'" src="images/googlefeud.webp" alt="google-feud"/>
+            <img width="15%" onclick="document.location='/embeds/drivemad.html'" src="images/drivemad.webp" alt="drive-mad"/>
+            <img width="15%" onclick="document.location='/embeds/slopeball.html'" src="images/slopeball.webp" alt="slope-ball"/>
+            <img width="15%" onclick="document.location='/embeds/drawthehill.html'" src="images/drawthehill.webp" alt="draw-the-hill"/>
+
 
         </div>
         </div>
@@ -247,6 +269,35 @@
             window.location.assign("https://dnap.tk/old2/index.html")
         }
 
+
+
+
+
+
+        var today = new Date();
+        var hourNow = today.getHours();
+        var greeting;
+        var icon;
+
+        if (hourNow < 12){
+        greeting = "Good Morning";
+        icon = "coffee";
+        }
+        else if (hourNow < 19){
+        greeting = 'Good afternoon!';
+        icon = "sun-o";
+        }
+        else if (hourNow < 24){
+        greeting = "Good evening"
+        icon = "moon-o";
+        }
+        else {
+        greeting = "Welcome";
+        }
+
+        document.getElementById("col-1").innerHTML = "<h3>" + greeting + " </h1>";
+
+        document.getElementById("icon").innerHTML = ('<i class="fa fa-' + icon + '" aria-hidden="true"></i>');
     </script>
 </body>
 </html>

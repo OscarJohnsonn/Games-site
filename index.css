@@ -162,3 +162,13 @@ input:checked + .slider:before {
     top: 50px;
     left: 80px;
 }
+.message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+.fa{
+    margin-left: 20px;
+    color: #b3b300;
+}
