@@ -164,7 +164,7 @@ body{
     width: 10%;
     height: 10%;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 828px) {
     .search-container {
       width: 100%;
     }
