@@ -1,35 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RJPRQRMQM0"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        
-        gtag('config', 'G-RJPRQRMQM0');
-    </script>
-    <link rel="manifest" href="/manifest.json">
-    <link rel="icon" type="image/x-icon" href="/images/logo.webp">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DNAP</title>
-    <meta name="description" content="Free online FUN for school and work!">
-    <meta name="keywords" content="subwaysurfers, wordle unlimited, bitlife, eggycar, dogeminer, jetpack-joyride, paperio2, paper.io 2, flappy bird, flappyvird, candycrush, amongus, knifemaster, chess, motox3m, poki unblocked, online, school, work, googleclassroom, googledrive">
-    <script src="/new/index.js"></script> 
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="sw.js"></script>
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="pwa test">
-    <link rel="apple-touch-icon" href="images/logo.webp">
-    <meta name="msapplication-TileImage" content="images/icon.png">
-    <meta name="msapplication-TileColor" content="#000">
+  <title>Simple Search</title>
+  <style>
+    .search-container {
+      width: 300px;
+      margin: 20px auto;
+    }
+
+    #search-input {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    #results-list {
+      width: 300px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    #results-list li {
+      width: 300px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-bottom: 5px;
+    }
+
+    #results-list li a {
+      color: #000;
+      text-decoration: none;
+    }
+
+    #results-list li a:hover {
+      background-color: #ccc;
+    }
+  </style>
 </head>
 <body>
   <div class="search-container">
@@ -40,14 +50,21 @@
     function search(query, data) {
       const results = [];
       for (let i = 0; i < data.length; i++) {
-        if (data[i].includes(query)) {
+        if (data[i].name.toLowerCase().includes(query)) {
           results.push(data[i]);
         }
       }
       return results;
     }
 
-    const data = ['apple', 'banana', 'orange', 'grape'];
+    const data = [
+      { name: 'Apple', url: 'https://www.apple.com/' },
+      { name: 'Banana', url: 'https://www.banana.com/' },
+      { name: 'Orange', url: 'https://www.orange.com/' },
+      { name: 'Grape', url: 'https://www.grape.com/' },
+      { name: 'DNAP', url: 'https://dnap.tk' }
+    ];
+
     const input = document.getElementById('search-input');
     const resultsList = document.getElementById('results-list');
 
@@ -66,7 +83,11 @@
       } else {
         for (let i = 0; i < results.length; i++) {
           const li = document.createElement('li');
-          li.innerText = results[i];
+          const a = document.createElement('a');
+          a.href = results[i].url;
+          a.target = '_blank';
+          a.innerText = results[i].name;
+          li.appendChild(a);
           resultsList.appendChild(li);
         }
       }
