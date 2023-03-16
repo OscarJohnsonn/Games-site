@@ -48,22 +48,25 @@
   </div>
   <script>
     function search(query, data) {
-      const results = [];
-      for (let i = 0; i < data.length; i++) {
-        if (data[i].name.toLowerCase().includes(query)) {
-          results.push(data[i]);
+    const results = [];
+    const queryLowerCase = query.toLowerCase();
+    for (let i = 0; i < data.length; i++) {
+        if (data[i].name.toLowerCase().includes(queryLowerCase)) {
+        results.push(data[i]);
         }
-      }
-      return results;
+    }
+    return results;
     }
 
+
     const data = [
-      { name: 'Apple', url: 'https://www.apple.com/' },
-      { name: 'Banana', url: 'https://www.banana.com/' },
-      { name: 'Orange', url: 'https://www.orange.com/' },
-      { name: 'Grape', url: 'https://www.grape.com/' },
-      { name: 'DNAP', url: 'https://dnap.tk' }
+    { name: 'Apple', url: 'https://www.apple.com/', image: 'https://via.placeholder.com/150x150?text=Apple' },
+    { name: 'Banana', url: 'https://www.banana.com/', image: 'https://via.placeholder.com/150x150?text=Banana' },
+    { name: 'Orange', url: 'https://www.orange.com/', image: 'https://via.placeholder.com/150x150?text=Orange' },
+    { name: 'Grape', url: 'https://www.grape.com/', image: 'https://via.placeholder.com/150x150?text=Grape' },
+    { name: 'DNAP', url: 'https://dnap.tk', image: 'https://via.placeholder.com/150x150?text=DNAP' }
     ];
+
 
     const input = document.getElementById('search-input');
     const resultsList = document.getElementById('results-list');
@@ -75,23 +78,28 @@
     });
 
     function displayResults(results) {
-      resultsList.innerHTML = '';
-      if (results.length === 0) {
+    resultsList.innerHTML = '';
+    if (results.length === 0) {
         const li = document.createElement('li');
         li.innerText = 'No results found.';
         resultsList.appendChild(li);
-      } else {
+    } else {
         for (let i = 0; i < results.length; i++) {
-          const li = document.createElement('li');
-          const a = document.createElement('a');
-          a.href = results[i].url;
-          a.target = '_blank';
-          a.innerText = results[i].name;
-          li.appendChild(a);
-          resultsList.appendChild(li);
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        const img = document.createElement('img');
+        a.href = results[i].url;
+        a.target = '_blank';
+        a.innerText = results[i].name;
+        img.src = results[i].image;
+        img.alt = results[i].name;
+        li.appendChild(img);
+        li.appendChild(a);
+        resultsList.appendChild(li);
         }
-      }
     }
+    }
+
   </script>
 </body>
 </html>
