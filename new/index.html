@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RJPRQRMQM0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        
+        gtag('config', 'G-RJPRQRMQM0');
+    </script>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" type="image/x-icon" href="/images/logo.webp">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DNAP</title>
+    <meta name="description" content="Free online FUN for school and work!">
+    <meta name="keywords" content="subwaysurfers, wordle unlimited, bitlife, eggycar, dogeminer, jetpack-joyride, paperio2, paper.io 2, flappy bird, flappyvird, candycrush, amongus, knifemaster, chess, motox3m, poki unblocked, online, school, work, googleclassroom, googledrive">
+    <script src="/new/index.js"></script> 
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="sw.js"></script>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="pwa test">
+    <link rel="apple-touch-icon" href="images/logo.webp">
+    <meta name="msapplication-TileImage" content="images/icon.png">
+    <meta name="msapplication-TileColor" content="#000">
+</head>
+<body>
+  <div class="search-container">
+    <input type="text" placeholder="Search..." id="search-input">
+    <ul id="results-list"></ul>
+  </div>
+  <script>
+    function search(query, data) {
+      const results = [];
+      for (let i = 0; i < data.length; i++) {
+        if (data[i].includes(query)) {
+          results.push(data[i]);
+        }
+      }
+      return results;
+    }
+
+    const data = ['apple', 'banana', 'orange', 'grape'];
+    const input = document.getElementById('search-input');
+    const resultsList = document.getElementById('results-list');
+
+    input.addEventListener('input', () => {
+      const query = input.value.toLowerCase();
+      const results = search(query, data);
+      displayResults(results);
+    });
+
+    function displayResults(results) {
+      resultsList.innerHTML = '';
+      if (results.length === 0) {
+        const li = document.createElement('li');
+        li.innerText = 'No results found.';
+        resultsList.appendChild(li);
+      } else {
+        for (let i = 0; i < results.length; i++) {
+          const li = document.createElement('li');
+          li.innerText = results[i];
+          resultsList.appendChild(li);
+        }
+      }
+    }
+  </script>
+</body>
+</html>
