@@ -130,6 +130,7 @@ body{
 #search-input:hover{
     background-color: #0D1624;
     color: aliceblue;
+    transition: 0.2s;
 }
 #results-list {
     width: 300px;
