@@ -118,6 +118,7 @@ body{
     width: 300px;
     border-radius: 10px;
     margin: 20px auto;
+    transition: 0.3s;
 }
 
 #search-input {
@@ -126,6 +127,7 @@ body{
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 10px;
+    transition: 0.3s;
 }
 #search-input:hover{
     background-color: #0D1624;
@@ -138,6 +140,7 @@ body{
     margin: 0;
     padding: 0;
     color: aliceblue;
+    transition: 0.3s;
 }
 
 #results-list li {
@@ -167,5 +170,22 @@ body{
 @media screen and (max-width: 828px) {
     .search-container {
       width: 100%;
+      transition: 0.3s;
+      top: 0;
+    }
+    #search-input{
+        border-radius: 0px;
+        transition: 0.3s;
+        height: 250px;
+        font-size: 2rem;
+        top: 0;
+    }
+    .myGallery img{
+        width: 50%;
+        transition: 0.3s;
+    }
+    .myGallery{
+        grid-gap: 4px;
+        transition: 0.3s;
     }
   }
