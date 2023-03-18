@@ -189,8 +189,12 @@ body{
     }
     #search-input{
         transition: 0.3s;
-        font-size: 2rem;
+        font-size: 1.2rem;
         top: 0;
+    }
+    #results-list li a {
+        color: aliceblue;
+        font-size: 1.1rem;
     }
     .myGallery img{
         width: 100%;
