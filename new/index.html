@@ -7,6 +7,7 @@
   <script src="index.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hind&amp;display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  
 </head>
 <body>
 <h1 class="title">DNAP</h1>
@@ -201,16 +202,51 @@
     const queryLowerCase = query.toLowerCase();
     for (let i = 0; i < data.length; i++) {
         if (data[i].name.toLowerCase().includes(queryLowerCase)) {
-        results.push(data[i]);
+            results.push(data[i]);
+            if (results.length >= 2) {
+                break;
+            }
         }
     }
     return results;
-    }
+}
+
 
 
     const data = [
     { name: 'Drivemad', url: '/embeds/drivemad.html', image: '/images/drivemad.webp' },
     { name: 'Jetpackjoyride', url: '/embeds/jetpackjoyride.html', image: '/images/jetpackjoyride.webp' },
+    { name: 'Subway Surfers', url: '/embeds/subway.html', image: '/images/subwaysurfers.webp' },
+    { name: 'BitLife', url: 'https://bitlife.o5ange.repl.co', image: '/images/bitlife.webp' },
+    { name: 'Core Ball', url: '/embeds/core-ball.html', image: '/images/coreball-1.webp' },
+    { name: 'Paperio 2', url: '/embeds/paperio2.html', image: '/images/paperio2-1.webp' },
+    { name: 'Doge Miner', url: '/embeds/DogeMiner.html', image: '/images/dogeminer-1.webp' },
+    { name: 'Ball Blast', url: '/embeds/ballblast.html', image: '/images/ballblast.webp' },
+    { name: 'Dash Valley', url: '/embeds/dashvalley.html', image: '/images/dashvalley.webp' },
+    { name: 'Stack', url: '/embeds/stack.html', image: '/images/stack.webp' },
+    { name: 'Flappy', url: '/embeds/flappy.html', image: '/images/flappy.webp' },
+    { name: 'Cell Machine', url: '/embeds/cellmachine.html', image: '/images/cellmachine.webp' },
+    { name: 'Planet Life', url: '/embeds/planetlife.html', image: '/images/superplanet.gif' },
+    { name: 'Push The Square', url: '/embeds/push.html', image: '/images/push.webp' },
+    { name: 'Cookie Clicker', url: '/embeds/cookie.html', image: '/images/cookie.webp' },
+    { name: 'Big Red Button', url: '/embeds/button.html', image: '/images/button.webp' },
+    { name: 'osu!', url: '/embeds/osu.html', image: '/images/osu.webp' },
+    { name: 'Eel Slap', url: '/embeds/eelslap.html', image: '/images/eelslap.webp' },
+    { name: 'Proxy Servers', url: '/embeds/proxy.html', image: '/images/proxy.webp' },
+    { name: 'Stick Man Golf', url: '/embeds/stickmangolf.html', image: '/images/stickmangolf-1.webp' },
+    { name: 'Adventure Capitalist', url: 'https://links.dnap.tk/Capitalist.html', image: '/images/adventurecapitalist.webp' },
+    { name: 'Pillar Valley', url: 'https://links.dnap.tk/pillarvalley.html', image: '/images/pillarvalley.webp' },
+    { name: 'Regretris', url: 'https://links.dnap.tk/regretris.html', image: '/images/regretris.webp' },
+    { name: 'Hextris', url: 'https://links.dnap.tk/hextris.html', image: '/images/hextris.webp' },
+    { name: 'Doodle Cricket', url: 'https://links.dnap.tk/cricket.html', image: '/images/doodlecricket.webp' },
+    { name: 'Tower Stack', url: 'https://links.dnap.tk/Tower.html', image: '/images/towerstack.webp' },
+    { name: 'Candycrush', url: 'https://links.dnap.tk/candycrush.html', image: '/images/candycrush.webp' },
+    { name: 'Flappy 2048', url: '/embeds/flappy2048.html', image: '/images/flappy2048.webp' },
+    { name: 'Papas Burgeria', url: '/embeds/papasburgeria.html', image: '/images/papasburgeria-1.webp' },
+    { name: '', url: '/embeds/.html', image: '/images/.webp' },
+    { name: '', url: '/embeds/.html', image: '/images/.webp' },
+    { name: '', url: '/embeds/.html', image: '/images/.webp' },
+    { name: '', url: '/embeds/.html', image: '/images/.webp' },
     { name: '', url: '/embeds/.html', image: '/images/.webp' },
     { name: '', url: '/embeds/.html', image: '/images/.webp' },
     { name: '', url: '/embeds/.html', image: '/images/.webp' },
