@@ -1,6 +1,7 @@
 {
   "short_name": "DNAP",
   "name": "DNAP",
+  "start_url": "/index.html",
   "icons": [
     {
       "src": "/images/images/logo.webp",

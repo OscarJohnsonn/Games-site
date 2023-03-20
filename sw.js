@@ -9,6 +9,9 @@ const filesToCache = [
   '/images',
 ];
 
+
+
+
 //install the sw
 self.addEventListener('install', function (e) {
   console.log('[ServiceWorker] Install');
