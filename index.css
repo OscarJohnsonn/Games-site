@@ -194,3 +194,10 @@ body{
         transition: 0.3s;
     }
 }
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: aliceblue;
+    color: #0D1624;
+    border-radius: 20%;
+}
