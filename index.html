@@ -1,314 +1,364 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RJPRQRMQM0"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        
-        gtag('config', 'G-RJPRQRMQM0');
-    </script>
-    <link rel="manifest" href="/manifest.json">
-    <link rel="icon" type="image/x-icon" href="/images/logo.webp">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DNAP</title>
-    <meta name="description" content="Free online FUN for school and work!">
-    <meta name="keywords" content="subwaysurfers, wordle unlimited, bitlife, eggycar, dogeminer, jetpack-joyride, paperio2, paper.io 2, flappy bird, flappyvird, candycrush, amongus, knifemaster, chess, motox3m, poki unblocked, online, school, work, googleclassroom, googledrive">
-    <script src="index.js"></script> 
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="sw.js"></script>
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="pwa test">
-    <link rel="apple-touch-icon" href="images/logo.webp">
-    <meta name="msapplication-TileImage" content="images/icon.png">
-    <meta name="msapplication-TileColor" content="#000">
-
-    
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RJPRQRMQM0"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      
+      gtag('config', 'G-RJPRQRMQM0');
+  </script>
+  <title>DNAP V.3.0</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="manifest" href="/manifest.json">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" type="image/x-icon" href="/images/logo.webp">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hind&amp;display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=yes">
+  <script src="sw.js"></script>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="pwa test">
+  <link rel="apple-touch-icon" href="images/logo.webp">
+  <meta name="msapplication-TileImage" content="images/icon.png">
+  <meta name="msapplication-TileColor" content="#000">
+  <meta name="description" content="Free online FUN for school and work!">
+  <meta name="theme-color" content="#128075">
+  <meta name="keywords" content="subwaysurfers, wordle unlimited, bitlife, eggycar, dogeminer, jetpack-joyride, paperio2, paper.io 2, flappy bird, flappyvird, candycrush, amongus, knifemaster, chess, motox3m, poki unblocked, online, school, work, googleclassroom, googledrive">
+</head>
 <body>
-
-
-
-    <div id="google_translate_element">
-
-        <script type="text/javascript">
-        function googleTranslateElementInit() {
-        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-        }
-        </script>
-        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    </div>
-
-
-    <label class="switch">
-        <input type="checkbox" onclick="darkLight()" id="checkBox" >
-        <span class="slider"></span>
-    </label>
-    <h2 class="setting">Dark Mode/Light Mode</h2>
-    <label class="switch">
-        <input type="checkbox" onclick="olddnap()" id="checkBox" >
-        <span class="slider"></span>
-    </label>
-    <h2 class="olddnap">Old DNAP</h2>
+<h1 class="title">DNAP</h1>
+  <div class="search-container">
+    <input type="text" placeholder="Search..." id="search-input">
+    <ul id="results-list"></ul>
+  </div>
 
 
 
 
 
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><img width="50px"src="images/up.webp"></button>
-    <span class="Title"></span>
-    <div class="message">
-        <div id="col-1"></div>
-        <div id="col-2"><div id="icon"></div></div>
-    </div>
+
+  <div class="myGallery">
+    <a href="/embeds/drivemad.html"><img width="15%" height="" src="/images/drivemad.webp" alt="drive-mad"/></a>
+    <a href="/embeds/jetpackjoyride.html"><img width="15%"  height=""  src="/images/jetpackjoyride.webp" alt="jetpack-joyride"/></a>
+    <a href="/embeds/subway.html"><img width="15%"  height="" src="/images/subwaysurfers.webp" alt="subwaysurfers"/></a>
+    <a href="/embeds/EggyCar.html"><img width="15%"  height=""  src="/images/eggycar.webp" alt="eggycar"/></a>
+    <a href="https://bitlife.o5ange.repl.co"><img width="15%"  height=""  src="/images/bitlife.webp" alt="bitlife"/></a>
+    <a href="/embeds/core-ball.html"><img width="15%"  height="" src="/images/coreball-1.webp" alt="core-ball"/></a>
+    <a href="/embeds/paperio2.html"><img width="15%"  height=""  src="/images/paperio2-1.webp" alt="paperio2"/></a>
+    <a href="/embeds/DogeMiner.html"><img width="15%"  height="" src="/images/dogeminer-1.webp" alt="DogeMiner"/></a>
+    <a href="/embeds/ballblast.html"><img width="15%"  height=""  src="/images/ballblast.webp" alt="ballblast"/></a>
+    <a href="/embeds/dashvalley.html"><img width="15%"  height="" src="/images/dashvalley.webp" alt="dashvalley"/></a>
+    <a href="/embeds/stack.html"><img width="15%"  height="" src="/images/stack.webp" alt="stack"/></a>
+    <a href="/embeds/flappy.html"><img width="15%"  height="" src="/images/flappy.webp" alt="flappy Bird"/></a>
+
+    <img width="15%"  height="" onclick="document.location='/embeds/cellmachine.html'" src="/images/cellmachine.webp" alt="cellmachine"/>
+    <img width="15%"  height="" onclick="document.location='/embeds/planetlife.html'" src="/images/superplanet.gif" alt="planetlife"/>
+    <img width="15%"  height="" onclick="document.location='/embeds/push.html'" src="/images/push.webp" alt="push-the-square"/>
+    <img width="15%"  height="" onclick="document.location='/embeds/cookie.html'" src="/images/cookie.webp" alt="cookie clicker"/>
+    <img width="15%"  height="" onclick="document.location='/embeds/button.html'" src="/images/button.webp" alt="bigredbutton"/>
+    <img width="15%"  height="" onclick="document.location='/embeds/osu.html'" src="/images/osu.webp" alt="osu"/>
+    <img width="15%"  height="" onclick="document.location='/embeds/eelslap.html'" src="/images/eelslap.webp" alt="eelslap"/>
+
+    <img width="15%"  height="" onclick="document.location='/proxy.html'" src="/images/proxy.webp" alt="Proxy"/>
+    <img width="15%"  height="" onclick="document.location='/embeds/stickmangolf.html'" src="/images/stickmangolf-1.webp" alt="stickman-golf"/>
+    <img width="15%"  height="" onclick="document.location='https://links.dnap.tk/Capitalist.html'" src="/images/adventurecapitalist.webp" alt="adventurecapitalist"/>
+    <img width="15%"  height="" onclick="document.location='https://links.dnap.tk/pillarvalley.html'" src="/images/pillarvalley.webp" alt="pillarvalley"/>
+    <img width="15%"  height="" onclick="document.location='https://links.dnap.tk/regretris.html'" src="/images/regretris.webp" alt="regretris"/>
+    <img width="15%"  height="" onclick="document.location='https://links.dnap.tk/hextris.html'" src="/images/hextris.webp" alt="hextris"/>
+    <img width="15%"  height="" onclick="document.location='https://links.dnap.tk/cricket.html'" src="/images/doodlecricket.webp" alt="doodlecricket"/>
+    <img width="15%"  height="" onclick="document.location='/embeds/flappy2048.html'" src="/images/flappy2048.webp" alt="flappy2048"/>
+    <img width="15%"  height="" onclick="document.location='https://links.dnap.tk/Tower.html'" src="/images/towerstack.webp" alt="towerstack"/>
+    <img width="15%"  height="" onclick="document.location='https://links.dnap.tk/candycrush.html'" src="/images/candycrush.webp" alt="candycrush"/>
+    <img width="15%"  height="" onclick="document.location='/embeds/papasburgeria.html'" src="/images/papasburgeria-1.webp" alt="papasburgeria"/>
     
-    <h2 style="font-size: 2rem;">v.3.0 Coming soon..<br><a href="https://dnap.tk/new/index.html">Try it here..</a></h2>
-    <div class="content">
-        <h2 class="Popular">Trending <img class="fire"src="../images/trending.svg" alt="trending"></h2>
-        <div class="scroll-container">
-        <div class="gridscroll">
-            
-            <a href="/embeds/drivemad.html"><img width="15%" src="images/drivemad.webp" alt="drive-mad"/></a>
-            <a href="/embeds/jetpackjoyride.html"><img width="15%"  src="images/jetpackjoyride.webp" alt="jetpack-joyride"/></a>
-            <a href="/embeds/subway.html"><img width="15%" src="images/subwaysurfers.webp" alt="subwaysurfers"/></a>
-            <a href="/embeds/EggyCar.html"><img width="15%"  src="images/eggycar.webp" alt="eggycar"/></a>
-            <a href="https://bitlife.o5ange.repl.co"><img width="15%"  src="images/bitlife.webp" alt="bitlife"/></a>
-            <a href="/embeds/core-ball.html"><img width="15%" src="images/coreball-1.webp" alt="core-ball"/></a>
-            <a href="/embeds/paperio2.html"><img width="15%"  src="images/paperio2-1.webp" alt="paperio2"/></a>
-            <a href="/embeds/DogeMiner.html"><img width="15%" src="images/dogeminer-1.webp" alt="DogeMiner"/></a>
-            <a href="/embeds/ballblast.html"><img width="15%"  src="images/ballblast.webp" alt="ballblast"/></a>
-            <a href="/embeds/dashvalley.html"><img width="15%" src="images/dashvalley.webp" alt="dashvalley"/></a>
-            <a href="/embeds/stack.html"><img width="15%" src="images/stack.webp" alt="stack"/></a>
-            <a href="/embeds/flappy.html"><img width="15%" src="images/flappy.webp" alt="flappy Bird"/></a>
-            
-
-        </div>
-        </div>
-        <h2 class="Popular">New Games <img class="fire" src="images/games.svg" alt="games"></h2>
-                <div class="scroll-container">
-        <div class="gridscroll">
-            <img width="15%" onclick="document.location='/embeds/cellmachine.html'" src="images/cellmachine.webp" alt="cellmachine"/>
-            <img width="15%" onclick="document.location='/embeds/planetlife.html'" src="images/superplanet.gif" alt="planetlife"/>
-            <img width="15%" onclick="document.location='/embeds/push.html'" src="images/push.webp" alt="push-the-square"/>
-            <img width="15%" onclick="document.location='/embeds/cookie.html'" src="images/cookie.webp" alt="cookie clicker"/>
-            <img width="15%" onclick="document.location='/embeds/button.html'" src="images/button.webp" alt="bigredbutton"/>
-            <img width="15%" onclick="document.location='/embeds/osu.html'" src="images/osu.webp" alt="osu"/>
-            <img width="15%" onclick="document.location='/embeds/eelslap.html'" src="images/eelslap.webp" alt="eelslap"/>
-            <img width="15%" onclick="document.location='/embeds/.html'" src="images/.webp" alt=""/>
-            <img width="15%" onclick="document.location='/embeds/.html'" src="images/.webp" alt=""/>
-            <img width="15%" onclick="document.location='/embeds/.html'" src="images/.webp" alt=""/>
 
 
-
-        </div>
-        </div>
-        <h2 class="Popular">Other games <img class="fire" src="images/games.svg" alt="games"></h2>
-                <div class="scroll-container">
-        <div class="gridscroll">
-            
-            <img width="15%" onclick="document.location='/proxy.html'" src="images/proxy.webp" alt="Proxy"/>
-            <img width="15%" onclick="document.location='/embeds/stickmangolf.html'" src="images/stickmangolf-1.webp" alt="stickman-golf"/>
-            <img width="15%" onclick="document.location='https://links.dnap.tk/Capitalist.html'" src="images/adventurecapitalist.webp" alt="adventurecapitalist"/>
-            <img width="15%" onclick="document.location='https://links.dnap.tk/pillarvalley.html'" src="images/pillarvalley.webp" alt="pillarvalley"/>
-            <img width="15%" onclick="document.location='https://links.dnap.tk/regretris.html'" src="images/regretris.webp" alt="regretris"/>
-            <img width="15%" onclick="document.location='https://links.dnap.tk/hextris.html'" src="images/hextris.webp" alt="hextris"/>
-            <img width="15%" onclick="document.location='https://links.dnap.tk/cricket.html'" src="images/doodlecricket.webp" alt="doodlecricket"/>
-            <img width="15%" onclick="document.location='/embeds/flappy2048.html'" src="images/flappy2048.webp" alt="flappy2048"/>
-            <img width="15%" onclick="document.location='https://links.dnap.tk/Tower.html'" src="images/towerstack.webp" alt="towerstack"/>
-            <img width="15%" onclick="document.location='https://links.dnap.tk/candycrush.html'" src="images/candycrush.webp" alt="candycrush"/>
-            <img width="15%" onclick="document.location='/embeds/papasburgeria.html'" src="images/papasburgeria-1.webp" alt="papasburgeria"/>
-            
-
-        </div>
-        </div>
-        <div class="scroll-container">
-        <div class="gridscroll">
-            
-            <img width="15%" onclick="document.location='/embeds/1.html'" src="images/1.webp" alt="1"/>
-            <img width="15%" onclick="document.location='/embeds/wallsmash.html'" src="images/wallsmash.webp" alt="wallsmash"/>
-            <img width="15%" onclick="document.location='/embeds/stickmerge.html'" src="images/stickmerge.webp" alt="stick merge"/>
-            <img width="15%" onclick="document.location='/embeds/ballistickchickens.html'" src="images/ballisticchickens.webp" alt="ballistic-chickens"/>
-            <img width="15%" onclick="document.location='/embeds/blackholesquare'" src="images/blackholesquare.webp" alt="blackholesquare"/>
-            <img width="15%" onclick="document.location='/embeds/DogeMine2.html'" src="images/dogeminer2.webp" alt="dogeminer2"/>
-            <img width="15%" onclick="document.location='/embeds/dragonvsbricks.html'" src="images/dragonvsicebricks.webp" alt="dragon-vs-bricks"/>
-            <img width="15%" onclick="document.location='/embeds/googlefued.html'" src="images/googlefeud.webp" alt="google-feud"/>
-            <img width="15%" onclick="document.location='/embeds/drivemad.html'" src="images/drivemad.webp" alt="drive-mad"/>
-            <img width="15%" onclick="document.location='/embeds/slopeball.html'" src="images/slopeball.webp" alt="slope-ball"/>
-            <img width="15%" onclick="document.location='/embeds/drawthehill.html'" src="images/drawthehill.webp" alt="draw-the-hill"/>
-
-
-        </div>
-        </div>
-                <div class="scroll-container">
-        <div class="gridscroll">
-            
-            <img width="15%" onclick="document.location='/embeds/swerve.html'" src="images/swerve.webp" alt="swerve"/>
-            <img width="15%" onclick="document.location='https://links.dnap.tk/Tetris.html'" src="images/tetris.webp" alt="tetris"/>
-            <img width="15%" onclick="document.location='/embeds/wordle.html'" src="images/wordle-1.webp" alt="wordle"/>
-            <img width="15%" onclick="document.location='/embeds/soundboard.html'" src="images/soundboard-1.webp" alt="soundboard"/>
-            <img width="15%" onclick="document.location='/embeds/goball.html'" src="images/goball-1.webp" alt="goball"/>
-            <img width="15%" onclick="document.location='/embeds/youarejeffbezos.html'" src="images/youarejeffbezos.webp" alt="you-are-bezos"/>
-            <img width="15%" onclick="document.location='/embeds/99balls.html'" src="images/99ballsevo.webp" alt="99balls"/>
-            <img width="15%" onclick="document.location='/embeds/aquapark.html'" src="images/aquaparks.webp" alt="aquapark-slides"/>
-            <img width="15%" onclick="document.location='/embeds/slimerushtd.html'" src="images/slimerushtd.webp" alt="slime-rush-td"/>
-            <img width="15%" onclick="document.location='/embeds/roblox.html'" src="images/roblox-1.webp" alt="roblox"/>
-            <img width="15%" onclick="document.location='https://links.dnap.tk/duckhunt.html'" src="images/duckhunt.webp" alt="duckhunt"/>
-
-        </div>
-        </div>
-                <div class="scroll-container">
-        <div class="gridscroll">
-            
-            <img width="15%" onclick="document.location='/embeds/stackbump.html'" src="images/stackbump.webp" alt="stackbump3d"/>
-            <img width="15%" onclick="document.location='/embeds/particleclicker.html'" src="images/particleclicker.webp" alt="particle-clicker"/>
-            <img width="15%" onclick="document.location='/embeds/ombounce.html'" src="images/omnombounce-1.webp" alt="omnombounce"/>
-            <img width="15%" onclick="document.location='/embeds/knifemaster.html'" src="images/knifeninja.webp" alt="knifeninja"/>
-            <img width="15%" onclick="document.location='/embeds/webglfluid.html'" src="images/webglfluid.webp" alt="webgl-fluid-simulation"/>
-            <img width="15%" onclick="document.location='/embeds/amongus.html'" src="images/amongus.webp" alt="amongus"/>
-            <img width="15%" onclick="document.location='https://links.dnap.tk/Chess.html'" src="images/chess.webp" alt="chess"/>
-            <img width="15%" onclick="document.location='/embeds/templerun.html'" src="images/templerun.webp" alt="temple-run-2"/>
-            <img width="15%" onclick="document.location='/embeds/craftmine.html'" src="images/craftmine.webp" alt="craftmine"/>
-            <img width="15%" onclick="document.location='/embeds/papaspizzaria.html'" src="images/papaspizzeria.webp" alt="papaspizzaria"/>
-            <img width="15%" onclick="document.location='/embeds/rollyvortex.html'" src="images/rollyvortex.webp" alt="rolly-vortex"/>
-
-        </div>
-        </div>
-                <div class="scroll-container">
-        <div class="gridscroll">
-            
-            <img width="15%" onclick="document.location='/embeds/motox3m.html'" src="images/motox3m.webp" alt="motox3m"/>
-            <img width="15%" onclick="document.location='/embeds/ctr.html'" src="images/ctr.webp" alt="cut the rope"/>
-            <img width="15%" onclick="document.location='https://links.dnap.tk/2048cupcakes.html'" src="images/2048cupcakes.webp" alt="2048cupcakes"/>
-            <img width="15%" onclick="document.location='https://links.dnap.tk/thecube.html'" src="images/thecube.webp" alt="thecube"/>
-            <img width="15%" onclick="document.location='https://links.dnap.tk/bubblepairs.html'" src="images/bubblepairs.webp" alt="bubblepairs"/>
-            <img width="15%" onclick="document.location='/embeds/bloonstd.html'" src="images/bloonstd.webp" alt="bloonstd"/>
-            <img width="15%" onclick="document.location='/embeds/bloonstd2.html'" src="images/bloonstd2.webp" alt="bloonstd2"/>
-            <img width="15%" onclick="document.location='https://links.dnap.tk/cstimer.html'" src="images/cstimer.webp" alt="cstimer"/>
-            <img width="15%" onclick="document.location='https://links.dnap.tk/flexboxfroggy.html'" src="images/flexboxfroggy.webp" alt="flexboxfroggy"/>
-            <img width="15%" onclick="document.location='/old2/spinny.html'" src="images/spinnydnap.webp" alt="spinnydnap"/>
-
-        </div>
-        </div>
-        <div class="scroll-container">
-            <div class="gridscroll">
-                
-                <img width="15%" onclick="document.location='/embeds/grindcraft.html'" src="images/grindcraft.webp" alt="grindcraft"/>
-                <img width="15%" onclick="document.location='/embeds/rollingforests.html'" src="images/rolly forests.webp" alt="rolling-forests"/>
-                <img width="15%" onclick="document.location='https://links.dnap.tk/sandspiel.html'" src="images/sandspeil.webp" alt="sandspeil"/>
-                <img width="15%" onclick="document.location='https://links.dnap.tk/gradient.html'" src="images/gradientmatch.webp" alt="gradientmatch"/>
-                <img width="15%" onclick="document.location='https://links.dnap.tk/simonsays.html'" src="images/simonsays.webp" alt="simonsays"/>
-                <img width="15%" onclick="document.location='https://links.dnap.tk/photopieces.html'" src="images/photo.webp" alt="photopieces"/>
-                <img width="15%" onclick="document.location='/embeds/crossyroad.html'" src="images/crossyroad.webp" alt="crossyroad"/>
-                <img width="15%" onclick="document.location='https://links.dnap.tk/hexgl.html'" src="images/hexgl.webp" alt="hexgl"/>
-                <img width="15%" onclick="document.location='https://links.dnap.tk/tanuki.html'" src="images/tanuki.webp" alt="tanuki"/>
-                <img width="15%" onclick="document.location='https://links.dnap.tk/geogee.html'" src="images/geogee.webp" alt="geogee"/>
-                <img width="15%" onclick="document.location='https://links.dnap.tk/bongocat.html'" src="images/bongocat.webp" alt="bongocat"/>
     
-            </div>
-            </div>
-        <div class="scroll-container">
-            <div class="gridscroll">
-                    
-                <img width="15%" onclick="document.location='https://links.dnap.tk/hangman.html'" src="images/hangman.webp" alt="hangman"/>
-                <img width="15%" onclick="document.location='https://links.dnap.tk/Pool.html'" src="images/8ball.webp" alt="pool"/>
-                <img width="15%" onclick="document.location='https://links.dnap.tk/littlealchemy.html'" src="images/littlealchemy.webp" alt="littlealchemy"/>
-                <img width="15%" onclick="document.location='https://links.dnap.tk/tictactoe.html'" src="images/tictactoe.webp" alt="tictactoe"/>
-                <img width="15%" onclick="document.location='https://links.dnap.tk/proxx.html'" src="images/proxx.webp" alt="proxx"/>
-                <img width="15%" onclick="document.location='https://links.dnap.tk/caygames.html'" src="images/caygames.webp" alt="caygames"/>
-             
-            </div>
-            </div>
+    <img width="15%"  height="" onclick="document.location='/embeds/1.html'" src="/images/1.webp" alt="1"/>
+    <img width="15%"  height="" onclick="document.location='/embeds/wallsmash.html'" src="/images/wallsmash.webp" alt="wallsmash"/>
+    <img width="15%"  height="" onclick="document.location='/embeds/stickmerge.html'" src="/images/stickmerge.webp" alt="stick merge"/>
+    <img width="15%"  height="" onclick="document.location='/embeds/ballistickchickens.html'" src="/images/ballisticchickens.webp" alt="ballistic-chickens"/>
+    <img width="15%"  height="" onclick="document.location='/embeds/blackholesquare'" src="/images/blackholesquare.webp" alt="blackholesquare"/>
+    <img width="15%"  height="" onclick="document.location='/embeds/DogeMine2.html'" src="/images/dogeminer2.webp" alt="dogeminer2"/>
+    <img width="15%"  height="" onclick="document.location='/embeds/dragonvsbricks.html'" src="/images/dragonvsicebricks.webp" alt="dragon-vs-bricks"/>
+    <img width="15%"  height="" onclick="document.location='/embeds/googlefued.html'" src="/images/googlefeud.webp" alt="google-feud"/>
+    <img width="15%"  height="" onclick="document.location='/embeds/drivemad.html'" src="/images/drivemad.webp" alt="drive-mad"/>
+    <img width="15%"  height="" onclick="document.location='/embeds/slopeball.html'" src="/images/slopeball.webp" alt="slope-ball"/>
+    <img width="15%"  height="" onclick="document.location='/embeds/drawthehill.html'" src="/images/drawthehill.webp" alt="draw-the-hill"/>
 
-  
-    </div>
-    <script>
-        // Get the button
-        let mybutton = document.getElementById("myBtn");
 
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function() {scrollFunction()};
 
-        function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            mybutton.style.display = "block";
-        } else {
-            mybutton.style.display = "none";
+    
+    <img width="15%"  height="" onclick="document.location='/embeds/swerve.html'" src="/images/swerve.webp" alt="swerve"/>
+    <img width="15%"  height="" onclick="document.location='https://links.dnap.tk/Tetris.html'" src="/images/tetris.webp" alt="tetris"/>
+    <img width="15%"  height="" onclick="document.location='/embeds/wordle.html'" src="/images/wordle-1.webp" alt="wordle"/>
+    <img width="15%"  height="" onclick="document.location='/embeds/soundboard.html'" src="/images/soundboard-1.webp" alt="soundboard"/>
+    <img width="15%"  height="" onclick="document.location='/embeds/goball.html'" src="/images/goball-1.webp" alt="goball"/>
+    <img width="15%"  height="" onclick="document.location='/embeds/youarejeffbezos.html'" src="/images/youarejeffbezos.webp" alt="you-are-bezos"/>
+    <img width="15%"  height="" onclick="document.location='/embeds/99balls.html'" src="/images/99ballsevo.webp" alt="99balls"/>
+    <img width="15%"  height="" onclick="document.location='/embeds/aquapark.html'" src="/images/aquaparks.webp" alt="aquapark-slides"/>
+    <img width="15%"  height="" onclick="document.location='/embeds/slimerushtd.html'" src="/images/slimerushtd.webp" alt="slime-rush-td"/>
+    <img width="15%"  height="" onclick="document.location='/embeds/roblox.html'" src="/images/roblox-1.webp" alt="roblox"/>
+    <img width="15%"  height="" onclick="document.location='https://links.dnap.tk/duckhunt.html'" src="/images/duckhunt.webp" alt="duckhunt"/>
+
+
+    <img width="15%"  height="" onclick="document.location='/embeds/stackbump.html'" src="/images/stackbump.webp" alt="stackbump3d"/>
+    <img width="15%"  height="" onclick="document.location='/embeds/particleclicker.html'" src="/images/particleclicker.webp" alt="particle-clicker"/>
+    <img width="15%"  height="" onclick="document.location='/embeds/ombounce.html'" src="/images/omnombounce-1.webp" alt="omnombounce"/>
+    <img width="15%"  height="" onclick="document.location='/embeds/knifemaster.html'" src="/images/knifeninja.webp" alt="knifeninja"/>
+    <img width="15%"  height="" onclick="document.location='/embeds/webglfluid.html'" src="/images/webglfluid.webp" alt="webgl-fluid-simulation"/>
+    <img width="15%"  height="" onclick="document.location='/embeds/amongus.html'" src="/images/amongus.webp" alt="amongus"/>
+    <img width="15%"  height="" onclick="document.location='https://links.dnap.tk/Chess.html'" src="/images/chess.webp" alt="chess"/>
+    <img width="15%"  height="" onclick="document.location='/embeds/templerun.html'" src="/images/templerun.webp" alt="temple-run-2"/>
+    <img width="15%"  height="" onclick="document.location='/embeds/craftmine.html'" src="/images/craftmine.webp" alt="craftmine"/>
+    <img width="15%"  height="" onclick="document.location='/embeds/papaspizzaria.html'" src="/images/papaspizzeria.webp" alt="papaspizzaria"/>
+    <img width="15%"  height="" onclick="document.location='/embeds/rollyvortex.html'" src="/images/rollyvortex.webp" alt="rolly-vortex"/>
+
+
+    
+    <img width="15%"  height="" onclick="document.location='/embeds/motox3m.html'" src="/images/motox3m.webp" alt="motox3m"/>
+    <img width="15%"  height="" onclick="document.location='/embeds/ctr.html'" src="/images/ctr.webp" alt="cut the rope"/>
+    <img width="15%"  height="" onclick="document.location='https://links.dnap.tk/2048cupcakes.html'" src="/images/2048cupcakes.webp" alt="2048cupcakes"/>
+    <img width="15%"  height="" onclick="document.location='https://links.dnap.tk/thecube.html'" src="/images/thecube.webp" alt="thecube"/>
+    <img width="15%"  height="" onclick="document.location='https://links.dnap.tk/bubblepairs.html'" src="/images/bubblepairs.webp" alt="bubblepairs"/>
+    <img width="15%"  height="" onclick="document.location='/embeds/bloonstd.html'" src="/images/bloonstd.webp" alt="bloonstd"/>
+    <img width="15%"  height="" onclick="document.location='/embeds/bloonstd2.html'" src="/images/bloonstd2.webp" alt="bloonstd2"/>
+    <img width="15%"  height="" onclick="document.location='https://links.dnap.tk/cstimer.html'" src="/images/cstimer.webp" alt="cstimer"/>
+    <img width="15%"  height="" onclick="document.location='https://links.dnap.tk/flexboxfroggy.html'" src="/images/flexboxfroggy.webp" alt="flexboxfroggy"/>
+    <img width="15%"  height="" onclick="document.location='/old2/spinny.html'" src="/images/spinnydnap.webp" alt="spinnydnap"/>
+
+
+    <img width="15%"  height="" onclick="document.location='/embeds/grindcraft.html'" src="/images/grindcraft.webp" alt="grindcraft"/>
+    <img width="15%"  height="" onclick="document.location='/embeds/rollingforests.html'" src="/images/rolly forests.webp" alt="rolling-forests"/>
+    <img width="15%"  height="" onclick="document.location='https://links.dnap.tk/sandspiel.html'" src="/images/sandspeil.webp" alt="sandspeil"/>
+    <img width="15%"  height="" onclick="document.location='https://links.dnap.tk/gradient.html'" src="/images/gradientmatch.webp" alt="gradientmatch"/>
+    <img width="15%"  height="" onclick="document.location='https://links.dnap.tk/simonsays.html'" src="/images/simonsays.webp" alt="simonsays"/>
+    <img width="15%"  height="" onclick="document.location='https://links.dnap.tk/photopieces.html'" src="/images/photo.webp" alt="photopieces"/>
+    <img width="15%"  height="" onclick="document.location='/embeds/crossyroad.html'" src="/images/crossyroad.webp" alt="crossyroad"/>
+    <img width="15%"  height="" onclick="document.location='https://links.dnap.tk/hexgl.html'" src="/images/hexgl.webp" alt="hexgl"/>
+    <img width="15%"  height="" onclick="document.location='https://links.dnap.tk/tanuki.html'" src="/images/tanuki.webp" alt="tanuki"/>
+    <img width="15%"  height="" onclick="document.location='https://links.dnap.tk/geogee.html'" src="/images/geogee.webp" alt="geogee"/>
+    <img width="15%"  height="" onclick="document.location='https://links.dnap.tk/bongocat.html'" src="/images/bongocat.webp" alt="bongocat"/>
+    
+
+    
+    <img width="15%"  height="" onclick="document.location='https://links.dnap.tk/hangman.html'" src="/images/hangman.webp" alt="hangman"/>
+    <img width="15%"  height="" onclick="document.location='https://links.dnap.tk/Pool.html'" src="/images/8ball.webp" alt="pool"/>
+    <img width="15%"  height="" onclick="document.location='https://links.dnap.tk/littlealchemy.html'" src="/images/littlealchemy.webp" alt="littlealchemy"/>
+    <img width="15%"  height="" onclick="document.location='https://links.dnap.tk/tictactoe.html'" src="/images/tictactoe.webp" alt="tictactoe"/>
+    <img width="15%"  height="" onclick="document.location='https://links.dnap.tk/proxx.html'" src="/images/proxx.webp" alt="proxx"/>
+    <img  onclick="document.location='https://links.dnap.tk/caygames.html'" src="/images/caygames.webp" alt="caygames"/>
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    function search(query, data) {
+    const results = [];
+    const queryLowerCase = query.toLowerCase();
+    for (let i = 0; i < data.length; i++) {
+        if (data[i].name.toLowerCase().includes(queryLowerCase)) {
+            results.push(data[i]);
+            if (results.length >= 2) {
+                break;
+            }
         }
+    }
+    return results;
+}
+
+
+
+    const data = [
+    { name: 'Eggy Car', url: '/embeds/EggyCar', image: '/images/eggycar.webp' },
+    { name: '1', url: '/embeds/1.html', image: '/images/1.webp' },
+    { name: 'Adventure Capitalist', url: 'https://links.dnap.tk/Capitalist.html', image: '/images/adventurecapitalist.webp' },
+    { name: 'Drivemad', url: '/embeds/drivemad.html', image: '/images/drivemad.webp' },
+    { name: 'Jetpackjoyride', url: '/embeds/jetpackjoyride.html', image: '/images/jetpackjoyride.webp' },
+    { name: 'Subway Surfers', url: '/embeds/subway.html', image: '/images/subwaysurfers.webp' },
+    { name: 'BitLife', url: 'https://bitlife.o5ange.repl.co', image: '/images/bitlife.webp' },
+    { name: 'Core Ball', url: '/embeds/core-ball.html', image: '/images/coreball-1.webp' },
+    { name: 'Paperio 2', url: '/embeds/paperio2.html', image: '/images/paperio2-1.webp' },
+    { name: 'Doge Miner', url: '/embeds/DogeMiner.html', image: '/images/dogeminer-1.webp' },
+    { name: 'Ball Blast', url: '/embeds/ballblast.html', image: '/images/ballblast.webp' },
+    { name: 'Dash Valley', url: '/embeds/dashvalley.html', image: '/images/dashvalley.webp' },
+    { name: 'Stack', url: '/embeds/stack.html', image: '/images/stack.webp' },
+    { name: 'Flappy', url: '/embeds/flappy.html', image: '/images/flappy.webp' },
+    { name: 'Cell Machine', url: '/embeds/cellmachine.html', image: '/images/cellmachine.webp' },
+    { name: 'Planet Life', url: '/embeds/planetlife.html', image: '/images/superplanet.gif' },
+    { name: 'Push The Square', url: '/embeds/push.html', image: '/images/push.webp' },
+    { name: 'Cookie Clicker', url: '/embeds/cookie.html', image: '/images/cookie.webp' },
+    { name: 'Big Red Button', url: '/embeds/button.html', image: '/images/button.webp' },
+    { name: 'osu!', url: '/embeds/osu.html', image: '/images/osu.webp' },
+    { name: 'Eel Slap', url: '/embeds/eelslap.html', image: '/images/eelslap.webp' },
+    { name: 'Proxy Servers', url: '/embeds/proxy.html', image: '/images/proxy.webp' },
+    { name: 'Stick Man Golf', url: '/embeds/stickmangolf.html', image: '/images/stickmangolf-1.webp' },
+    { name: 'Pillar Valley', url: 'https://links.dnap.tk/pillarvalley.html', image: '/images/pillarvalley.webp' },
+    { name: 'Regretris', url: 'https://links.dnap.tk/regretris.html', image: '/images/regretris.webp' },
+    { name: 'Hextris', url: 'https://links.dnap.tk/hextris.html', image: '/images/hextris.webp' },
+    { name: 'Doodle Cricket', url: 'https://links.dnap.tk/cricket.html', image: '/images/doodlecricket.webp' },
+    { name: 'Tower Stack', url: 'https://links.dnap.tk/Tower.html', image: '/images/towerstack.webp' },
+    { name: 'Candycrush', url: 'https://links.dnap.tk/candycrush.html', image: '/images/candycrush.webp' },
+    { name: 'Flappy 2048', url: '/embeds/flappy2048.html', image: '/images/flappy2048.webp' },
+    { name: 'Papas Burgeria', url: '/embeds/papasburgeria.html', image: '/images/papasburgeria-1.webp' },
+    { name: 'Wall Smash', url: '/embeds/wallsmash.html', image: '/images/wallsmash.webp' },
+    { name: 'Stick Merge', url: '/embeds/stickmerge.html', image: '/images/stickmerge.webp' },
+    { name: 'Ballistic Chickens', url: '/embeds/ballistickchickens.html', image: '/images/ballisticchickens.webp' },
+    { name: 'Black Hole Square', url: '/embeds/blackholesquare.html', image: '/images/blackholesquare.webp' },
+    { name: 'Doge Miner 2', url: '/embeds/DogeMine2.html', image: '/images/dogeminer2.webp' },
+    { name: 'Dragon Vs Bricks', url: '/embeds/dragonvsbricks.html', image: '/images/dragonvsicebricks.webp' },
+    { name: 'Google Fued', url: '/embeds/googlefued.html', image: '/images/googlefeud.webp' },
+    { name: 'Slopeball', url: '/embeds/slopeball.html', image: '/images/slopeball.webp' },
+    { name: 'Draw The Hill', url: '/embeds/drawthehill.html', image: '/images/drawthehill.webp' },
+    { name: 'Swerve', url: '/embeds/swerve.html', image: '/images/swerve.webp' },
+    { name: 'Tetris', url: 'https://links.dnap.tk/Tetris.html', image: '/images/tetris.webp' },
+    { name: 'Wordle+', url: '/embeds/wordle.html', image: '/images/wordle-1.webp' },
+    { name: 'Soundboard', url: '/embeds/soundboard.html', image: '/images/soundboard.webp' },
+    { name: 'Go Ball', url: '/embeds/goball.html', image: '/images/goball.webp' },
+    { name: 'You Are Jeff Bezos', url: '/embeds/youarejeffbezos.html', image: '/images/youarejeffbezos.webp' },
+    { name: '99Balls', url: '/embeds/99balls.html', image: '/images/99balls.webp' },
+    { name: 'Aqua Park Slides', url: '/embeds/aquapark.html', image: '/images/aquapark.webp' },
+    { name: 'Slime Rush td', url: '/embeds/slimerushtd.html', image: '/images/slimerushtd.webp' },
+    { name: 'Roblox', url: '/embeds/roblox.html', image: '/images/roblox.webp' },
+    { name: 'Duckhunt', url: 'https://links.dnap.tk/duckhunt.html', image: '/images/duckhunt.webp' },
+    { name: 'Stack Bump 3d', url: '/embeds/stackbump.html', image: '/images/stackbump.webp' },
+    { name: 'Particle Clicker', url: '/embeds/particleclicker.html', image: '/images/particleclicker.webp' },
+    { name: 'OmNomBounce', url: '/embeds/ombounce.html', image: '/images/omnombounce-1.webp' },
+    { name: 'Knife Master', url: '/embeds/knifemaster.html', image: '/images/knifeninja.webp' },
+    { name: 'Webgl Fluid Sim', url: '/embeds/webglfluid.html', image: '/images/webglfluid.webp' },
+    { name: 'Among Us', url: '/embeds/amongus.html', image: '/images/amongus.webp' },
+    { name: 'Chess', url: 'https://links.dnap.tk/Chess.html', image: '/images/chess.webp' },
+    { name: 'Temple Run 2', url: '/embeds/templerun.html', image: '/images/templerun.webp' },
+    { name: 'CraftMine', url: '/embeds/craftmine.html', image: '/images/craftmine.webp' },
+    { name: 'Papas Pizzaria', url: '/embeds/papaspizzaria.html', image: '/images/papaspizzeria.webp' },
+    { name: 'Rolly Vortex', url: '/embeds/rollyvortex.html', image: '/images/rolly-vortex.webp' },
+    { name: 'Motox3m', url: '/embeds/motox3m.html', image: '/images/motox3m.webp' },
+    { name: 'Cut The rope', url: '/embeds/ctr.html', image: '/images/ctr.webp' },
+    { name: '2048 Cupcakes', url: '/embeds/2048cupcakes.html', image: '/images/2048cupcakes.webp' },
+    { name: 'The Cube', url: 'https://links.dnap.tk/thecube.html', image: '/images/thecube.webp' },
+    { name: 'Bubble Pairs', url: 'https://links.dnap.tk/bubblepairs.html', image: '/images/bubblepairs.webp' },
+    { name: 'Bloonstd', url: '/embeds/bloonstd.html', image: '/images/bloonstd.webp' },
+    { name: 'Bloonstd2', url: '/embeds/bloonstd2.html', image: '/images/bloonstd2.webp' },
+    { name: 'CS Timer', url: 'https://links.dnap.tk/cstimer.html', image: '/images/cstimer.webp' },
+    { name: 'Flex Box Froggy', url: 'https://links.dnap.tk/flexboxfroggy.html', image: '/images/flexboxfroggy.webp' },
+    { name: 'GrindCraft', url: '/embeds/grindcraft.html', image: '/images/grindcraft.webp' },
+    { name: 'Rolling Forests', url: '/embeds/rollingforexts.html', image: '/images/rolly forests.webp' },
+    { name: 'Sand Speil', url: 'https://links.dnap.tk/sandspiel.html', image: '/images/sandspeil.webp' },
+    { name: 'Gradient Match', url: 'https://links.dnap.tk/gradient.html', image: '/images/gradientmatch.webp' },
+    { name: 'Simon Says', url: 'https://links.dnap.tk/simonsays.html', image: '/images/simonsays.webp' },
+    { name: 'Photo Pieces', url: 'https://links.dnap.tk/photopieces.html', image: '/images/photo.webp' },
+    { name: 'Crossy Road', url: '/embeds/crossyroad.html', image: '/images/crossyroad.webp' },
+    { name: 'Hexgl', url: 'https://links.dnap.tk/hexgl.html', image: '/images/hexgl.webp' },
+    { name: 'Tanuki Sunset', url: 'https://links.dnap.tk/tanuki.html', image: '/images/tanuki.webp' },
+    { name: 'Geogee', url: 'https://links.dnap.tk/geogee.html', image: '/images/geogee.webp' },
+    { name: 'Bongo Cat', url: 'https://links.dnap.tk/bongocat.html', image: '/images/bongocat.webp' },
+    { name: 'Hangman', url: 'https://links.dnap.tk/hangman.html', image: '/images/hangman.webp' },
+    { name: '8 Ball Pool', url: 'https://links.dnap.tk/Pool.html', image: '/images/8ball.webp' },
+    { name: 'Little Alchemy', url: 'https://links.dnap.tk/littlealchemy.html', image: '/images/littlealchemy.webp' },
+    { name: 'Tic Tac Toe', url: 'https://links.dnap.tk/tictactoe.html', image: '/images/tictactoe.webp' },
+    { name: 'Proxx', url: 'https://links.dnap.tk/proxx.html', image: '/images/proxx.webp' },
+    { name: 'Cay Games', url: 'https://links.dnap.tk/caygames.html', image: '/images/caygames.webp' },
+    { name: 'DNAP', url: 'https://dnap.tk', image: '/images/logo.webp' }
+    ];
+
+
+    const input = document.getElementById('search-input');
+    const resultsList = document.getElementById('results-list');
+
+    input.addEventListener('input', () => {
+      const query = input.value.toLowerCase();
+      const results = search(query, data);
+      displayResults(results);
+    });
+
+    function displayResults(results) {
+    resultsList.innerHTML = '';
+    if (results.length === 0) {
+        const li = document.createElement('li');
+        li.innerText = 'No results found.🤷‍♂️';
+        resultsList.appendChild(li);
+    } else {
+        for (let i = 0; i < results.length; i++) {
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        const img = document.createElement('img');
+        a.href = results[i].url;
+        a.target = '_blank';
+        a.innerText = results[i].name;
+        img.src = results[i].image;
+        img.alt = results[i].name;
+        li.appendChild(img);
+        li.appendChild(a);
+        resultsList.appendChild(li);
         }
+    }
+    }
 
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-        }
-        $('body').toggleClass(localStorage.toggled);
-
-        function darkLight() {
-        /*DARK CLASS*/
-        if (localStorage.toggled != 'dark') {
-            $('body, p').toggleClass('dark', true);
-            localStorage.toggled = "dark";
-            
-        } else {
-            $('body, p').toggleClass('dark', false);
-            localStorage.toggled = "";
-        }
-        }
-
-        /*Add 'checked' property to input if background == dark*/
-        if ($('body').hasClass('dark')) {
-        $( '#checkBox' ).prop( "checked", true )
-        } else {
-        $( '#checkBox' ).prop( "checked", false )
-        }
-        
-        function olddnap() {
-            window.location.assign("https://dnap.tk/old2/index.html")
-        }
-
-
-
-
-
-
-        var today = new Date();
-        var hourNow = today.getHours();
-        var greeting;
-        var icon;
-
-        if (hourNow < 12){
-        greeting = "Good Morning";
-        icon = "coffee";
-        }
-        else if (hourNow < 19){
-        greeting = 'Good afternoon!';
-        icon = "sun-o";
-        }
-        else if (hourNow < 21){
-        greeting = "Good evening"
-        icon = "moon-o";
-        }
-        else if (hourNow < 24){
-        greeting = "Good Night (you should sleep💤)"
-        icon = "moon-o";
-        }
-        else {
-        greeting = "Welcome";
-        }
-
-        document.getElementById("col-1").innerHTML = "<h3>" + greeting + " </h1>";
-
-        document.getElementById("icon").innerHTML = ('<i class="fa fa-' + icon + '" aria-hidden="true"></i>');
-
-
-        
-    </script>
+  </script>
 </body>
 </html>
