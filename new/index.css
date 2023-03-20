@@ -21,6 +21,7 @@ body{
     animation: backInUp;
     animation-duration: 1s;
     transition: 0.1s;
+    cursor: pointer;
 }
 .myGallery img:hover{
     border-radius: 10%;
