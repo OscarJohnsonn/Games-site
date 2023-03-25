@@ -91,7 +91,6 @@ body{
         font-size: 1.5rem;
         transition: 0.1s;
     }
-    
 }
 @media (prefers-color-scheme: dark) {
 	body {
@@ -205,4 +204,18 @@ footer {
 }
 p{
     text-align: center;
+}
+.new{
+    text-align: center;
+    border-radius: 20%;
+    animation: backInUp;
+    animation-duration: 1s;
+    transition: 0.1s;
+}
+.other{
+    text-align: center;
+    border-radius: 20%;
+    animation: backInUp;
+    animation-duration: 1s;
+    transition: 0.1s;
 }
