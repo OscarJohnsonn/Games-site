@@ -95,7 +95,9 @@ body{
 @media (prefers-color-scheme: dark) {
 	body {
 		color: white; 
-        background: #0D1624;
+        background-image:url(/images/d20e43cdcadf850cfd8d4e953df0f3b4.png);
+        background-repeat: repeat;
+        background-attachment: fixed;
         transition: 0.1s;
 	}
     .search-container {
