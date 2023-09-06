@@ -353,20 +353,21 @@
         resultsList.appendChild(li);
     } else {
         for (let i = 0; i < results.length; i++) {
-        const li = document.createElement('li');
-        const a = document.createElement('a');
-        const img = document.createElement('img');
-        a.href = results[i].url;
-        a.target = '_blank';
-        a.innerText = results[i].name;
-        img.src = results[i].image;
-        img.alt = results[i].name;
-        li.appendChild(img);
-        li.appendChild(a);
-        resultsList.appendChild(li);
+            const li = document.createElement('li');
+            const a = document.createElement('a');
+            const img = document.createElement('img');
+            a.href = results[i].url;
+            // Remove the next line to open the links in the same tab
+            // a.target = '_blank';
+            a.innerText = results[i].name;
+            img.src = results[i].image;
+            img.alt = results[i].name;
+            li.appendChild(img);
+            li.appendChild(a);
+            resultsList.appendChild(li);
         }
     }
-    }
+  }
 
 
 
